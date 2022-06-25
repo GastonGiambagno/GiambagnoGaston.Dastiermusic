@@ -95,7 +95,7 @@ main {
     border-radius: 1rem;
     display: flex;
     align-items: center;
-    transition: all 0.9s;
+    transition: all ease 0.9s;
     
 }
 
@@ -121,8 +121,12 @@ main {
     border-radius: 2rem;
     margin:0 1rem;
     font-size: 1.5rem;
+    transition: all 1s;
 }
 
+.contenedor_seccion_mixmax:hover, .contenedor_seccion_beatmaking:hover, .contenedor_seccion_filmscoring:hover {
+    transform: scale(1.1);
+}
 
 
 .titulomixingmastering, .titulo_beatmaking, .titulo_filmscoring {
@@ -177,6 +181,7 @@ footer .logo {
         padding: 5px;
         margin: 5px;
         border-radius: 5px;
+        transition: all 0.5s;
     }
 
     .icono-instagram {
@@ -185,6 +190,7 @@ footer .logo {
         padding: 5px;
         margin: 5px;
         border-radius: 5px;
+        transition: all 0.5s;
     }
 
     .icono-spotify {
@@ -193,7 +199,13 @@ footer .logo {
         padding: 5px;
         margin: 5px;
         border-radius: 5px;
+        transition: all 0.5s;
     }
+
+    .icono-spotify:hover, .icono-facebook:hover, .icono-instagram:hover {
+        transform: translateY(-8px);
+    }
+
 
     .contenedor_footer_logoynav {
         display: flex;
@@ -347,15 +359,21 @@ footer .logo {
 
 .contenedor_main_servicios iframe {
     width: 20em;
+    height: 20em;
     object-fit: cover;
+    border-radius: 2rem;
+    border: ridge white;
+    margin: 0rem 2rem;
 }
 
 .contenedor_main_servicios {
     padding-top: 10rem;
     display: flex;
     justify-content: space-around;
-    flex-wrap: wrap
+    flex-wrap: wrap;
 }
+
+
 
 main h2, main h3, main h4 {
       font-size: 2rem;
@@ -376,20 +394,16 @@ main h2, main h3, main h4 {
     margin-top: 2rem;
 }
 
+.contenedor_section_mixingmastering:hover, .contenedor_section_beatmaking:hover, .contenedor_section_filomscoring:hover {
+    border:rgb(129, 129, 129) solid 1px;
+}
+
 .contenedor_div_servicios, .contenedor_div_servicios2 {
     display: flex;
     justify-content: space-around;
     align-items: center;
     
 }
-
-
-main iframe {
-    border-radius: 2rem;
-    border: ridge white;
-    margin: 0rem 2rem;
-}
-
 
 /* EQUIPAMIENTO */
 
