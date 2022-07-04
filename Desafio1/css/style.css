@@ -14,13 +14,9 @@ body {
     line-height: 1.5;
     font-family: "FuenteHeader";
     background-image: url(../multimedia/imagen-master1.jpg);
-    background-position: center;
-    background-size: cover;
     background-repeat: no-repeat;
-}
-
-main {
-    margin-top: 10rem;
+    background-attachment: fixed;
+    background-size: 100% 100%;
 }
 
 .contenedor_main_trabajos, .contenedor_main_servicios, .contenedor_main_contacto, .contenedor_main_nosotros {
@@ -60,6 +56,12 @@ main {
 
 .logo {
     width: 100%;
+}
+
+@media (max-width: 660px) {
+    .logo {
+        width: 7rem;
+    }
 }
 
 .imagen_header {
@@ -106,6 +108,83 @@ main {
 
 /* MAIN INDEX */
 
+main {
+    padding-top: 2rem;
+    color: white;
+}
+
+.carousel-item img {
+    height: 650px;
+}
+
+#contenainer_divs_segundorow_main {
+    background-color: rgba(46, 46, 46, 0.658);
+    border-radius: 0.5rem;
+    color: white;
+    margin: 1rem;
+}
+
+#contenainer_divs_segundorow_main p {
+    padding: 0 1rem;
+}
+
+#contenainer_divs_segundorow_main h3 {
+    padding-top: 1rem;
+}
+
+#contenainer_divs_segundorow_main img {
+    margin-top: 1rem;
+}
+
+.contenedor_imagenes_main {
+    width: 20rem;
+}
+
+.contenedor_imagenes_main img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+@media (max-width: 1200px) {
+    .contenedor_imagenes_main {
+        width: 15rem;
+    }
+
+    main {
+        font-size: large;
+    }
+}
+
+@media (max-width: 768px) {
+    .carousel-item img {
+        height: 400px;
+    }
+}
+
+@media (max-width: 375px) {
+    .carousel-item img {
+        height: 250px;
+    }
+
+    main {
+        font-size: medium;
+    }
+}
+
+@media (max-width: 320px) {
+    .carousel-item img {
+        height: 180px;
+    }
+
+    main {
+        font-size: x-small;
+    }
+
+    .contenedor_imagenes_main {
+        width: 10rem;
+    }
+}
+
 .contenedor_main {
     display: grid;
     width: 95%;
@@ -113,6 +192,7 @@ main {
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    margin-top: 2rem;
 }
 
 
@@ -156,7 +236,6 @@ main {
 /* FOOTER  */
 
 footer {
-    background-color: rgb(20, 20, 20);
     color: antiquewhite;
     padding: 2rem 0;
     margin-top: 5rem;
@@ -224,6 +303,10 @@ footer .logo {
     align-items: flex-end;
     justify-content: flex-end;
 
+}
+
+#container_div1_footer {
+    margin-left: 1rem;
 }
 
 /* CONTACTO */
@@ -357,52 +440,38 @@ footer .logo {
 
 /* SERVICIOS */
 
-.contenedor_main_servicios iframe {
-    width: 20em;
-    height: 20em;
-    object-fit: cover;
-    border-radius: 2rem;
-    border: ridge white;
-    margin: 0rem 2rem;
+#container_main_servicios {
+    background-color: rgba(46, 46, 46, 0.658);
+    border-radius: 0.5rem;
+    color: white;
+    margin: 3rem 1rem ; 
 }
 
-.contenedor_main_servicios {
-    padding-top: 10rem;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+#container_main_servicios img {
+    border-radius: 0.5rem;
+    margin: 1rem 0rem 1rem 0rem;
 }
 
+#container_main_servicios h2{
+    margin: 1rem;
+}
 
-
-main h2, main h3, main h4 {
-      font-size: 2rem;
-      margin: 1rem;
+#container_main_servicios p{
+    margin: 1rem;
 }
 
 
-.contenedor_titulo {
-    display: flex;
-    justify-content: center;    
+@media (max-width: 768px) {
+    #container_main_servicios img {
+        border-radius: 0.5rem;
+        width: 100%;
+    }
 }
 
-.contenedor_section_mixingmastering, .contenedor_section_beatmaking, .contenedor_section_filomscoring {
-    background-color: rgba(34, 34, 34, 0.87);
-    border-radius: 4rem;
-    padding: 3rem 3rem 2rem 3rem;
-    max-width: 1500px;
-    margin-top: 2rem;
-}
-
-.contenedor_section_mixingmastering:hover, .contenedor_section_beatmaking:hover, .contenedor_section_filomscoring:hover {
-    border:rgb(129, 129, 129) solid 1px;
-}
-
-.contenedor_div_servicios, .contenedor_div_servicios2 {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    
+@media (max-width: 575px) {
+    #container_servicios {
+        margin-right: 5rem;
+    }
 }
 
 /* EQUIPAMIENTO */
@@ -492,6 +561,7 @@ main h2, main h3, main h4 {
         display: grid;
         grid-template-columns: 95%;
         grid-template-rows: repeat(3, 1fr);
+
     }
 
     .contenedor_main_equipamiento p {
@@ -501,6 +571,15 @@ main h2, main h3, main h4 {
         border: solid grey;
         border-radius: 1rem;
         padding: 2em;
+    }
+
+    .contenedor_imagenesmain a{
+        display: flex;
+        justify-content: center;
+    }
+
+    .imagen_seccion_mixmax, .imagen_seccion_beatmaking, .imagen_seccion_filmscoring {
+        width: 80%;
     }
 
     .item_img_equipamiento {
@@ -513,11 +592,6 @@ main h2, main h3, main h4 {
 }
 
 @media only screen and (max-width: 600px) {
-
-    .contenedor_main_servicios iframe {
-        width: 12em;
-        object-fit: cover;
-    }
 
     main h2, main h3, main h4 {
         font-size: 1rem;
@@ -540,24 +614,11 @@ main h2, main h3, main h4 {
 
 @media only screen and (max-width: 320px) {
 
-    .nav_header ul li {
-        font-size: 5px;
-    }
-    .nav_header ul li a {
-        padding: 0.2rem 0.2rem;
-        border-radius: 0.2rem;
-    }
-
     .img_nosotros {
         border: solid rgb(129, 129, 129);
         border-radius: 2rem;
         margin-bottom: 2rem;
         width: 20em;
-    }
-
-    .contenedor_main_servicios iframe {
-        width: 10em;
-        
     }
 
     .contenedor_main_contacto {
