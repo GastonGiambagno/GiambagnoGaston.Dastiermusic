@@ -314,13 +314,14 @@ footer .logo {
 .contenedor_main_contacto {
     display: grid;
     grid-template-columns: 0.5fr 1fr;
+    margin-top: 5rem;
+    font-size: 1rem;
 }
 
 .contenedor_datoscontacto {
     background-color: rgba(34, 34, 34, 0.87);
     border-radius: 4rem;
     padding: 5rem;
-    max-width: 1500px;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -330,7 +331,6 @@ footer .logo {
     background-color: rgba(34, 34, 34, 0.87);
     border-radius: 4rem;
     padding: 5rem;
-    max-width: 1500px;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -342,7 +342,7 @@ footer .logo {
 }
 
 .contenedor_main_contacto_form {
-    margin-left: 10rem;
+    margin-left: 5rem;
     margin-right: 0;
 }
 
@@ -355,7 +355,7 @@ footer .logo {
 .listacontacto, .formcontacto {
     font-size: 1.5em;
     list-style: none;
-    margin-top: 2em;
+    margin-top: 1em;
 }
 
 .formcontacto {
@@ -375,8 +375,8 @@ footer .logo {
 .field {
     width: 100%;
     border: none;
-    margin: 1rem 0;
-    padding: 1rem;
+    margin: 0rem 0;
+    padding: 0.5rem;
     font-family: "FuenteHeader";
     font-weight: 400;
     border-radius: 1rem;
@@ -392,6 +392,7 @@ footer .logo {
     margin-top: 0;
     padding: 3rem;
     border-radius: 1rem;
+    font-size: 1rem;
 
 }
 
@@ -430,7 +431,8 @@ footer .logo {
     border: solid rgb(129, 129, 129);
     border-radius: 2rem;
     margin-bottom: 2rem;
-    width: 20em;
+    width: 100%;
+    max-width: 20rem;
 }
 
 .contenedor_valores h1, .contenedor_objetivos h2 {
