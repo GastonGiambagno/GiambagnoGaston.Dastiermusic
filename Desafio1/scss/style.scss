@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: rgb(26, 26, 26);
+    @extend %font;
+    font-family: "Fuente";
+    background-image: url(../multimedia/imagen-master1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+main {
+    margin-top: 10vh;
+}
+
+@import "base/variables";
+@import "base/extends";
+@import "base/fonts";
+@import "components/index";
+@import "components/servicios";
+@import "components/equipamiento";

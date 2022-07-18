@@ -1,0 +1,58 @@
+/* Equipamiento */
+@import "../base/extends";
+
+.contenedor_main_equipamiento {
+    padding-top: 10rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 95%;
+    max-width: 1500px;
+    margin: 0 auto;
+    gap: 3em;
+    .contenedor1, .contenedor2 {
+        .contendor_items {
+            display: flex;
+            justify-items: center;
+            align-items: center;
+            flex-direction: column;
+            margin-bottom: 2em;
+            img {
+                border-radius: 3rem;
+                border: solid grey;
+                justify-items: center;
+                width: 15em;
+                margin-bottom: 2em;
+            }
+            p {
+                display: flex;
+                justify-content: center;
+                background-color: rgba(34, 34, 34, 0.87);
+                border: solid grey;
+                border-radius: 3rem;
+                padding: 2em;
+
+            }   
+        }
+
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+    main h2, main h3, main h4 {
+        font-size: 1rem;
+        margin: 0.5rem;
+    }
+
+    .contenedor_section_mixingmastering, .contenedor_section_beatmaking, .contenedor_section_filomscoring {
+        background-color: rgba(34, 34, 34, 0.87);
+        border-radius: 2rem;
+        padding: 1rem 1rem 1rem 1rem;
+        margin-top: 2rem;
+    }
+        .contenedor_main_contacto {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+}
