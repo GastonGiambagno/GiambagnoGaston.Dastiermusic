@@ -38,21 +38,8 @@
 }
 
 @media only screen and (max-width: 600px) {
-
-    main h2, main h3, main h4 {
-        font-size: 1rem;
-        margin: 0.5rem;
+    .contenedor_main_equipamiento {
+        display: flex;
+        flex-wrap: wrap;
     }
-
-    .contenedor_section_mixingmastering, .contenedor_section_beatmaking, .contenedor_section_filomscoring {
-        background-color: rgba(34, 34, 34, 0.87);
-        border-radius: 2rem;
-        padding: 1rem 1rem 1rem 1rem;
-        margin-top: 2rem;
-    }
-        .contenedor_main_contacto {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
-    }
-}
+ }

@@ -132,20 +132,161 @@ body {
 }
 
 @media only screen and (max-width: 600px) {
-  main h2, main h3, main h4 {
-    font-size: 1rem;
-    margin: 0.5rem;
+  .contenedor_main_equipamiento {
+    display: flex;
+    flex-wrap: wrap;
   }
-  .contenedor_section_mixingmastering, .contenedor_section_beatmaking, .contenedor_section_filomscoring {
-    background-color: rgba(34, 34, 34, 0.87);
-    border-radius: 2rem;
-    padding: 1rem 1rem 1rem 1rem;
-    margin-top: 2rem;
-  }
+}
+/* Nosotros */
+main .contenedor_main_nosotros {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding: 3rem;
+  max-width: 1500px;
+  margin-top: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+main .contenedor_main_nosotros .contenedor_quien_soy {
+  background-color: rgba(34, 34, 34, 0.87);
+  border-radius: 4rem;
+  padding: 3rem;
+  max-width: 1500px;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+main .contenedor_main_nosotros .contenedor_quien_soy img {
+  border: solid rgb(129, 129, 129);
+  border-radius: 2rem;
+  margin-bottom: 2rem;
+  width: 100%;
+  max-width: 20rem;
+}
+main .contenedor_main_nosotros .contenedor_quien_soy p {
+  font-size: 1rem;
+}
+main .contenedor_main_nosotros .contenedor_valores, main .contenedor_main_nosotros .contenedor_objetivos {
+  background-color: rgba(34, 34, 34, 0.87);
+  border-radius: 4rem;
+  padding: 3rem;
+  max-width: 1500px;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+main .contenedor_main_nosotros .contenedor_valores h2, main .contenedor_main_nosotros .contenedor_objetivos h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+/* Contacto */
+.contenedor_main_contacto {
+  display: grid;
+  grid-template-columns: 0.5fr 1fr;
+  margin-top: 5rem;
+  font-size: 1rem;
+  width: 95%;
+  max-width: 1500px;
+  margin: 10vh auto;
+}
+.contenedor_main_contacto .contenedor_datoscontacto {
+  background-color: rgba(34, 34, 34, 0.87);
+  border-radius: 2rem;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.contenedor_main_contacto .contenedor_datoscontacto .contenedor_titulos .titulos_textstyle {
+  font-size: 2rem;
+  margin-top: 2rem;
+}
+.contenedor_main_contacto .contenedor_datoscontacto .listacontacto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 1em;
+  list-style: none;
+  margin-top: 7rem;
+}
+.contenedor_main_contacto .contenedor_datoscontacto iframe {
+  margin-top: 10em;
+  border-radius: 4rem;
+  width: 100%;
+  height: 20vh;
+}
+.contenedor_main_contacto .contenedor_main_contacto_form {
+  background-color: rgba(34, 34, 34, 0.87);
+  border-radius: 2rem;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+}
+.contenedor_main_contacto .contenedor_main_contacto_form .contenedor_titulos .titulos_textstyle {
+  font-size: 2rem;
+}
+.contenedor_main_contacto .contenedor_main_contacto_form .formcontacto {
+  font-size: 1em;
+  list-style: none;
+  margin-top: 1em;
+  display: block;
+  width: 100%;
+}
+.contenedor_main_contacto .contenedor_main_contacto_form .formcontacto label {
+  display: block;
+}
+.contenedor_main_contacto .contenedor_main_contacto_form .formcontacto .field {
+  width: 100%;
+  border: none;
+  margin: 1rem 0;
+  padding: 0.5rem;
+  font-family: "FuenteHeader";
+  font-weight: 400;
+  border-radius: 1rem;
+  font-size: 1em;
+}
+.contenedor_main_contacto .contenedor_main_contacto_form .contenedor_forminput .form_input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20em;
+  margin-top: 0;
+  padding: 1rem;
+  border-radius: 1rem;
+  font-size: 1em;
+}
+
+@media only screen and (max-width: 980px) {
   .contenedor_main_contacto {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .contenedor_main_contacto_form {
+    background-color: rgba(34, 34, 34, 0.87);
+    border-radius: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
   }
 }
 

@@ -1,0 +1,114 @@
+/* Contacto */
+
+.contenedor_main_contacto {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    margin-top: 5rem;
+    font-size: 1rem;
+    width: 95%;
+    max-width: 1500px;
+    margin: 10vh auto;
+    
+
+
+    .contenedor_datoscontacto {
+        background-color: rgba(34, 34, 34, 0.87);
+        border-radius: 2rem;
+        padding: 2rem;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        .contenedor_titulos {
+            .titulos_textstyle {
+                font-size: 2rem;
+                margin-top: 2rem;
+            }
+        
+        }
+        .listacontacto {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            font-size: 1em;
+            list-style: none;
+            margin-top: 7rem;
+        }
+        iframe {
+            margin-top: 10em;
+            border-radius: 4rem;
+            width: 100%;
+            height: 20vh;
+        }
+    }
+    .contenedor_main_contacto_form {
+        background-color: rgba(34, 34, 34, 0.87);
+        border-radius: 2rem;
+        padding: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+        .contenedor_titulos {
+            .titulos_textstyle{
+                font-size: 2rem;
+            }
+        }
+        .formcontacto {
+            font-size: 1em;
+            list-style: none;
+            margin-top: 1em;
+            display: block;
+            width: 100%;
+            label {
+                display: block;
+            }
+
+            .field {
+                width: 100%;
+                border: none;
+                margin: 1rem 0;
+                padding: 0.5rem;
+                font-family: "FuenteHeader";
+                font-weight: 400;
+                border-radius: 1rem;
+                font-size: 1em;
+            }
+        }
+        
+        .contenedor_forminput {
+            .form_input {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 20em;
+                margin-top: 0;
+                padding: 1rem;
+                border-radius: 1rem;
+                font-size: 1em;
+
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 980px) {
+    .contenedor_main_contacto {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contenedor_main_contacto_form {
+        background-color: rgba(34, 34, 34, 0.87);
+        border-radius: 4rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column;
+    }
+
+
+ }
