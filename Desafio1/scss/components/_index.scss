@@ -20,24 +20,37 @@ main {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         margin-top: 2rem;
+        @media (max-width: 480px) {
+            display: flex;
+            flex-wrap: wrap;
+        }   
         .seccion_main {
             .contenedor_seccion_mixmax, .contenedor_seccion_beatmaking, .contenedor_seccion_filmscoring {
                 background-color: rgba(34, 34, 34, 0.87);
                 border-radius: 2rem;
-                margin:0 1rem;
+                margin:0 1em; 
                 font-size: 1.5rem;
+                height: 100%;
+                @media (max-width: 480px) {
+                    margin-top: 1em;
+                }   
                 }
 
                 h2 {
-                    font-size: 1.5rem;
+                    font-size: 1.5vw;
                     padding-top: 1rem;
-                    margin: 1rem;
+                    margin: 1rem 0;
                     display: flex;
                     justify-content: center;
+                    text-align: center;
+                    @media (max-width: 480px) {
+                        font-size: 2vw;
+                    }               
+                
 
                 }
                 .contenedor_imagenesmain{
-                    padding: 1rem;
+                    padding: 1rem 0.2rem;
                     img {
                         border-radius: 1rem;
                         width: 100%;
@@ -49,9 +62,15 @@ main {
 
                     }
                 p {
-                    font-size: 1rem;
+                    text-align: center;
+                    font-size: 1.5vw;
                     padding: 1rem 1rem;
+                    @media (max-width: 480px) {
+                        font-size: 8px;
+                    }                      
+                
                 }    
                 }
             }
         }
+
