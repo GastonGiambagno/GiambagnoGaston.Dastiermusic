@@ -1,11 +1,16 @@
 /* INDEX */ 
 @import "../base/fonts";
 @import "../base/colors";
+@import "../base/extends";
 
 .carousel-item img {
     max-width: 100%;
-    height: 80vh;
+    height: 65vh;
+    @media (max-width: 480px) {
+        height: 100vw;
+    } 
 }
+
 
 
 
@@ -28,9 +33,7 @@ main {
             .contenedor_seccion_mixmax, .contenedor_seccion_beatmaking, .contenedor_seccion_filmscoring {
                 background-color: rgba(34, 34, 34, 0.87);
                 border-radius: 2rem;
-                margin:0 1em; 
-                font-size: 1.5rem;
-                height: 100%;
+                margin:0 1em;
                 @media (max-width: 480px) {
                     margin-top: 1em;
                 }   
@@ -63,13 +66,19 @@ main {
                     }
                 p {
                     text-align: center;
-                    font-size: 1.5vw;
+                    font-size: 1vw;
                     padding: 1rem 1rem;
                     @media (max-width: 480px) {
                         font-size: 8px;
                     }                      
-                
-                }    
+                }
+                a {
+                    @extend %bottons;
+                    font-size: 1vw; 
+                    @media (max-width: 480px) {
+                        font-size: 8px;
+                    }                     
+                }
                 }
             }
         }
