@@ -17,7 +17,7 @@
 main {
         font-family: "Font_Text";
         color: $font_color;
-        margin-top: 6vh;
+        margin-top: 4vh;
     .contenedor_main {
         width: 95%;
         max-width: 1500px;
@@ -33,14 +33,21 @@ main {
             .contenedor_seccion_mixmax, .contenedor_seccion_beatmaking, .contenedor_seccion_filmscoring {
                 background-color: rgba(34, 34, 34, 0.87);
                 border-radius: 2rem;
-                margin:0 1em;
-                @media (max-width: 480px) {
-                    margin-top: 1em;
-                }   
+                margin:0 1em 1rem 1em;
+                overflow-y:hidden;
+                height: 800px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                @media (max-width: 1980px) {
+                    height: auto;
+                } 
+                 
                 }
 
                 h2 {
-                    font-size: 1.5vw;
+                    font-size: 1.2vw;
                     padding-top: 1rem;
                     margin: 1rem 0;
                     display: flex;
@@ -68,13 +75,15 @@ main {
                     text-align: center;
                     font-size: 1vw;
                     padding: 1rem 1rem;
+                    margin-bottom: 30px;
                     @media (max-width: 480px) {
                         font-size: 8px;
                     }                      
                 }
-                a {
+                #bottom_contactanos{
                     @extend %bottons;
                     font-size: 1vw; 
+                    width: 50%;
                     @media (max-width: 480px) {
                         font-size: 8px;
                     }                     

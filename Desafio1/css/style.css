@@ -23,7 +23,7 @@ body {
   line-height: 1.5;
 }
 
-main #container_servicios #container_main_servicios div div div a, main .contenedor_main .seccion_main a {
+main #container_servicios #container_main_servicios div div div a, main .contenedor_main .seccion_main #bottom_contactanos {
   background-color: rgb(27, 27, 27);
   color: antiquewhite;
   padding: 1em;
@@ -50,7 +50,7 @@ body {
   line-height: 1.5;
 }
 
-main #container_servicios #container_main_servicios div div div a, main .contenedor_main .seccion_main a {
+main #container_servicios #container_main_servicios div div div a, main .contenedor_main .seccion_main #bottom_contactanos {
   background-color: rgb(27, 27, 27);
   color: antiquewhite;
   padding: 1em;
@@ -73,7 +73,7 @@ main #container_servicios #container_main_servicios div div div a, main .contene
 main {
   font-family: "Font_Text";
   color: antiquewhite;
-  margin-top: 6vh;
+  margin-top: 4vh;
 }
 main .contenedor_main {
   width: 95%;
@@ -92,15 +92,21 @@ main .contenedor_main {
 main .contenedor_main .seccion_main .contenedor_seccion_mixmax, main .contenedor_main .seccion_main .contenedor_seccion_beatmaking, main .contenedor_main .seccion_main .contenedor_seccion_filmscoring {
   background-color: rgba(34, 34, 34, 0.87);
   border-radius: 2rem;
-  margin: 0 1em;
+  margin: 0 1em 1rem 1em;
+  overflow-y: hidden;
+  height: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-@media (max-width: 480px) {
+@media (max-width: 1980px) {
   main .contenedor_main .seccion_main .contenedor_seccion_mixmax, main .contenedor_main .seccion_main .contenedor_seccion_beatmaking, main .contenedor_main .seccion_main .contenedor_seccion_filmscoring {
-    margin-top: 1em;
+    height: auto;
   }
 }
 main .contenedor_main .seccion_main h2 {
-  font-size: 1.5vw;
+  font-size: 1.2vw;
   padding-top: 1rem;
   margin: 1rem 0;
   display: flex;
@@ -124,17 +130,19 @@ main .contenedor_main .seccion_main p {
   text-align: center;
   font-size: 1vw;
   padding: 1rem 1rem;
+  margin-bottom: 30px;
 }
 @media (max-width: 480px) {
   main .contenedor_main .seccion_main p {
     font-size: 8px;
   }
 }
-main .contenedor_main .seccion_main a {
+main .contenedor_main .seccion_main #bottom_contactanos {
   font-size: 1vw;
+  width: 50%;
 }
 @media (max-width: 480px) {
-  main .contenedor_main .seccion_main a {
+  main .contenedor_main .seccion_main #bottom_contactanos {
     font-size: 8px;
   }
 }
@@ -146,7 +154,7 @@ body {
   line-height: 1.5;
 }
 
-main #container_servicios #container_main_servicios div div div a, main .contenedor_main .seccion_main a {
+main #container_servicios #container_main_servicios div div div a, main .contenedor_main .seccion_main #bottom_contactanos {
   background-color: rgb(27, 27, 27);
   color: antiquewhite;
   padding: 1em;
@@ -187,7 +195,7 @@ body {
   line-height: 1.5;
 }
 
-main .contenedor_main .seccion_main a, main #container_servicios #container_main_servicios div div div a {
+main .contenedor_main .seccion_main #bottom_contactanos, main #container_servicios #container_main_servicios div div div a {
   background-color: rgb(27, 27, 27);
   color: antiquewhite;
   padding: 1em;
@@ -314,6 +322,7 @@ main .contenedor_main_nosotros .contenedor_valores h2, main .contenedor_main_nos
   display: flex;
   align-items: center;
   flex-direction: column;
+  margin-top: 20px;
 }
 .contenedor_main_contacto .contenedor_datoscontacto .contenedor_titulos .titulos_textstyle {
   font-size: 2rem;
@@ -343,6 +352,7 @@ main .contenedor_main_nosotros .contenedor_valores h2, main .contenedor_main_nos
   flex-direction: column;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 15px;
 }
 .contenedor_main_contacto .contenedor_main_contacto_form .contenedor_titulos .titulos_textstyle {
   font-size: 2rem;
@@ -371,7 +381,7 @@ main .contenedor_main_nosotros .contenedor_valores h2, main .contenedor_main_nos
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 20em;
+  width: 40vh;
   margin-top: 0;
   padding: 1rem;
   border-radius: 1rem;
@@ -392,6 +402,7 @@ main .contenedor_main_nosotros .contenedor_valores h2, main .contenedor_main_nos
     align-items: center;
     justify-content: space-around;
     flex-direction: column;
+    margin-top: 15px;
   }
 }
 

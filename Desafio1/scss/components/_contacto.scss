@@ -18,6 +18,7 @@
         display: flex;
         align-items: center;
         flex-direction: column;
+        margin-top: 20px;
         .contenedor_titulos {
             .titulos_textstyle {
                 font-size: 2rem;
@@ -50,6 +51,7 @@
         flex-direction: column;
         margin-left: auto;
         margin-right: auto;
+        margin-top: 15px;
         .contenedor_titulos {
             .titulos_textstyle{
                 font-size: 2rem;
@@ -82,7 +84,7 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                width: 20em;
+                width: 40vh;
                 margin-top: 0;
                 padding: 1rem;
                 border-radius: 1rem;
@@ -108,6 +110,7 @@
         align-items: center;
         justify-content: space-around;
         flex-direction: column;
+        margin-top: 15px;
     }
 
 
