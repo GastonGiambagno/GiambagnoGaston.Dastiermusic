@@ -53,8 +53,8 @@ main {
                     display: flex;
                     justify-content: center;
                     text-align: center;
-                    @media (max-width: 480px) {
-                        font-size: 2vw;
+                    @media (max-width: 768px) {
+                        font-size: 10px;
                     }               
                 
 
@@ -76,14 +76,14 @@ main {
                     font-size: 1vw;
                     padding: 1rem 1rem;
                     margin-bottom: 30px;
-                    @media (max-width: 480px) {
+                    @media (max-width: 768px) {
                         font-size: 8px;
                     }                      
                 }
                 #bottom_contactanos{
                     @extend %bottons;
                     font-size: 1vw; 
-                    width: 50%;
+                    width: auto;
                     @media (max-width: 480px) {
                         font-size: 8px;
                     }                     

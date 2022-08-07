@@ -113,9 +113,9 @@ main .contenedor_main .seccion_main h2 {
   justify-content: center;
   text-align: center;
 }
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   main .contenedor_main .seccion_main h2 {
-    font-size: 2vw;
+    font-size: 10px;
   }
 }
 main .contenedor_main .seccion_main .contenedor_imagenesmain {
@@ -132,14 +132,14 @@ main .contenedor_main .seccion_main p {
   padding: 1rem 1rem;
   margin-bottom: 30px;
 }
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   main .contenedor_main .seccion_main p {
     font-size: 8px;
   }
 }
 main .contenedor_main .seccion_main #bottom_contactanos {
   font-size: 1vw;
-  width: 50%;
+  width: auto;
 }
 @media (max-width: 480px) {
   main .contenedor_main .seccion_main #bottom_contactanos {
